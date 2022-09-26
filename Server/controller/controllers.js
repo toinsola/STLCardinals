@@ -1,5 +1,5 @@
 
-const PI = require("../Model/PlayerInformation")
+const PI = require("../model/PlayerInformation")
 
 const getAllEntries = async (req, res, next) => {
     let object;
