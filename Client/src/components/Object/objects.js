@@ -1,9 +1,7 @@
-
-
 import React, { useEffect, useState } from "react";
 import "./object.css";
 import axios from "axios";
-import Object_function from "./object";
+import Object from "./object";
 const URL = "http://localhost:3001/cardinals/view";
 const fetchHandler = async () => {
   return await axios.get(URL).then((res) => res.data);

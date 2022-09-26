@@ -2,17 +2,17 @@
 const PI = require("../model/PlayerInformation")
 
 const getAllEntries = async (req, res, next) => {
-    let object;
+    let objects;
     try {
-        object = await PI.find();
+        objects = await PI.find();
     } catch (err) {
       console.log(err);
     }
   
-    if (!object) {
+    if (!objects) {
       return res.status(404).json({ message: "No values found" });
     }
-    return res.status(200).json({ object });
+    return res.status(200).json({ objects });
   };
   
   const getById = async (req, res, next) => {
